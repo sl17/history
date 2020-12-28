@@ -1,0 +1,75 @@
+{
+  "result": {
+    "fans_count": 3410626,
+    "map": {
+      "0": {
+        "product": 2,
+        "money": 1284,
+        "price": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "category": 0,
+        "sales": 82
+      },
+      "10029": {
+        "product": 10,
+        "money": 343909,
+        "price": [
+          8,
+          1,
+          1,
+          0,
+          0
+        ],
+        "category": 10029,
+        "sales": 3963
+      },
+      "10000": {
+        "product": 6,
+        "money": 25977,
+        "price": [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "category": 10000,
+        "sales": 123
+      },
+      "10003": {
+        "product": 1,
+        "money": 8372,
+        "price": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "category": 10003,
+        "sales": 28
+      },
+      "10017": {
+        "product": 11,
+        "money": 91461,
+        "price": [
+          5,
+          3,
+          2,
+          1,
+          0
+        ],
+        "category": 10017,
+        "sales": 579
+      }
+    },
+    "sales": 41042
+  },
+  "code": 1,
+  "time": 6
+}
