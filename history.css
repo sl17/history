@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.table-cont {
+  height: 100vh;
+  overflow: auto;
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+tbody,
+thead {
+  display: table-header-group;
+}
+
+th.thFiexd {
+  position: sticky;
+  left: 0;
+  background: #ddd;
+  white-space: nowrap;
+}
+
+thead tr {
+  background: #ddd;
+}
+
+thead {
+  position: relative;
+  z-index: 10;
+}
+
+thead tr th.th1 {
+  display: none;
+}
+
+thead tr th {
+  box-shadow: 0 0 0px 1px #000;
+}
+
+thead tr th span {
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 3px 0;
+}
+
+tbody tr:nth-child(even) {
+  background: #dedcf7;
+}
+
+tbody tr td:nth-child(odd) {
+  background: #dceaff;
+}
+
+tbody tr td {
+  word-break: keep-all;
+  padding: 8px 10px;
+}
+
+tbody tr td>div {
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  position: relative;
+}
+
+tbody tr td>div>i {
+  font-size: 14px;
+  color: #0088fd;
+  font-weight: bold;
+  font-style: normal;
+  cursor: default;
+  vertical-align: 1px;
+}
+
+tbody tr td>div>div {
+  display: none;
+  position: absolute;
+  width: 500px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #fff;
+  left: 40px;
+  transform: translateY(calc(-50% - 10px));
+  box-shadow: 0 0 2px 1px #000;
+  word-break: break-all;
+  transition: all .2s ease-in-out;
+  z-index: 15;
+}
+
+tbody tr td>div:hover div {
+  display: block;
+}
+
+tbody tr td>div>div::after {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: -8px;
+  content: '';
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+}
+
+tbody tr td>div>div::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: -9px;
+  content: '';
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #000;
+}
+
+th,
+td {
+  vertical-align: middle;
+  border: 1px solid #000;
+}
+
+th {
+  padding: 3px 10px;
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+  box-sizing: border-box;
+}
