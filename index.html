@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>HISTORY</title>
-  <style>
-    * {margin: 0px;padding: 0px;}
-    .table-cont{height: 100vh;overflow: auto;}
-    table {table-layout: fixed;border-spacing: 0;border-collapse: collapse;border: 1px solid #000;}
-    tbody,thead{display: table-header-group;}
-    th.thFiexd{position: sticky;left: 0;background: #ddd;white-space: nowrap;}
-    thead tr{background: #ddd;}
-    thead tr th.th1{display: none;}
-    thead tr th{box-shadow: 0 0 0px 1px #000;}
-    thead tr th span{font-size: 12px;white-space: nowrap;padding: 3px 0;}
-    tbody tr:nth-child(even) {background: #dedcf7;}
-    tbody tr td:nth-child(odd){background: #dceaff;}
-    tbody tr td{word-break: keep-all;padding: 8px 10px;}
-    tbody tr td>div{display: inline-block;width: 34px;height: 20px;position: relative;}
-    tbody tr td>div>i{font-size: 14px;color: #0088fd;font-weight: bold;font-style: normal;cursor: default;vertical-align: 1px;}
-    tbody tr td>div>div{opacity: 0;position: absolute;width: 400px;padding: 8px 10px;border-radius: 4px;background: #fff;left: 40px;transform:translateY(calc(-50% - 10px));box-shadow: 0 0 2px 1px #000;word-break: break-all;transition: all .2s ease-in-out;}
-    tbody tr td>div:hover div{opacity: 1;}
-    tbody tr td>div>div::after{position: absolute;top:calc(50% - 8px);left:-8px;content: '';border-bottom: 8px solid transparent;border-top: 8px solid transparent;border-right: 8px solid #fff;}
-    tbody tr td>div>div::before{position: absolute;top:calc(50% - 8px);left:-9px;content: '';border-bottom: 8px solid transparent;border-top: 8px solid transparent;border-right: 8px solid #000;}
-    th,td {vertical-align: middle;border: 1px solid #000;}
-    th {padding: 3px 10px;font-size: 14px;color: #000;font-weight: normal;box-sizing: border-box;}
-  </style>
+  <link rel="stylesheet" href="https://sl17.github.io/history/history.css">
   <script>
     window.onload = function () {
       var tableCont = document.querySelector('#table-cont');
@@ -38,104 +18,245 @@
   </script>
   <script>
     let country = [
-      {name: '夏', id: 1},
-      {name: '商', id: 2},
-      {name: '西周', id: 3},
-      {name: '齐', id: 4},									
-      {name: '晋', id: 5},
-      {name: '鲁', id: 6},
-      {name: '楚', id: 7},
-      {name: '秦', id: 8},
-      {name: '赵', id: 9},
-      {name: '燕', id: 10},
-      {name: '陈', id: 11},
-      {name: '宋', id: 12},
-      {name: '吴', id: 13},
-      {name: '越', id: 14},
+      { name: '夏', id: 1 },
+      { name: '商', id: 2 },
+      { name: '西周', id: 3 },
+      { name: '东周', id: 4 },
+      { name: '齐', id: 5 },
+      { name: '晋', id: 6 },
+      { name: '鲁', id: 7 },
+      { name: '楚', id: 8 },
+      { name: '秦', id: 9 },
+      { name: '赵', id: 10 },
+      { name: '燕', id: 11 },
+      { name: '陈', id: 12 },
+      { name: '宋', id: 13 },
+      { name: '吴', id: 14 },
+      { name: '越', id: 15 },
     ]
   </script>
 </head>
+
 <body>
   <div class='table-cont' id='table-cont'>
     <table>
       <thead class="thead">
         <tr>
           <th class="thFiexd" rowspan="3"></th>
-          <th scope="col" rowspan="3"><p>夏朝</p><span>公元前2146-1675年</span></th>
-          <th scope="col" rowspan="3"><p>商朝</p><span>公元前1675-1029年</span></th>
-          <th scope="col" rowspan="3"><p>西周</p><span>公元前1029-771年</span></th>
-          <th scope="col" colspan="11"><p>东周</p></th>
-          <th scope="col" rowspan="3"><p>秦</p><span>公元前221-206年</span></th>
-          <th scope="col" colspan="4"><p>汉</p></th>
-          <th scope="col" colspan="3"><p>三国</p></th>
-          <th scope="col" colspan="2"><p>晋</p></th>
-          <th scope="col" colspan="19"><p>十六国</p></th>
-          <th scope="col" colspan="9"><p>南北朝</p></th>
-          <th scope="col" rowspan="3"><p>隋唐</p><span>公元581-618年</span></th>
-          <th scope="col" colspan="15"><p>五代十国</p></th>
-          <th scope="col" colspan="2"><p>宋</p></th>
-          <th scope="col" rowspan="3"><p>辽国</p><span>公元907-1125年</span></th>
-          <th scope="col" rowspan="3"><p>大理</p><span>公元937-1254年</span></th>
-          <th scope="col" rowspan="3"><p>西夏</p><span>公元1032-1227年</span></th>
-          <th scope="col" rowspan="3"><p>金朝</p><span>公元1115-1234年</span></th>
-          <th scope="col" rowspan="3"><p>元朝</p><span>公元1206-1368年</span></th>
-          <th scope="col" rowspan="3"><p>明朝</p><span>公元1368-1644年</span></th>
-          <th scope="col" rowspan="3"><p>清朝</p><span>公元1636-1911年</span></th>
+          <th scope="col" rowspan="3">
+            <p>夏朝</p><span>公元前2146-1675年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>商朝</p><span>公元前1675-1029年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>西周</p><span>公元前1029-771年</span>
+          </th>
+          <th scope="col" colspan="12">
+            <p>东周</p>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>秦</p><span>公元前221-206年</span>
+          </th>
+          <th scope="col" colspan="4">
+            <p>汉</p>
+          </th>
+          <th scope="col" colspan="3">
+            <p>三国</p>
+          </th>
+          <th scope="col" colspan="2">
+            <p>晋</p>
+          </th>
+          <th scope="col" colspan="19">
+            <p>十六国</p>
+          </th>
+          <th scope="col" colspan="9">
+            <p>南北朝</p>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>隋唐</p><span>公元581-618年</span>
+          </th>
+          <th scope="col" colspan="15">
+            <p>五代十国</p>
+          </th>
+          <th scope="col" colspan="2">
+            <p>宋</p>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>辽国</p><span>公元907-1125年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>大理</p><span>公元937-1254年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>西夏</p><span>公元1032-1227年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>金朝</p><span>公元1115-1234年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>元朝</p><span>公元1206-1368年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>明朝</p><span>公元1368-1644年</span>
+          </th>
+          <th scope="col" rowspan="3">
+            <p>清朝</p><span>公元1636-1911年</span>
+          </th>
         </tr>
         <tr>
           <th class="th1 thFiexd"></th>
-          <th scope="col" colspan="6"><p>春秋</p><span>公元前770-476年</span></th>
-          <th scope="col" colspan="5"><p>战国</p><span>公元前475-221年</span></th>
-          <th scope="col" rowspan="2"><p>西汉</p><span>前206-公元8年</span></th>
-          <th scope="col" rowspan="2"><p>新朝</p><span>公元9-23年</span></th>
-          <th scope="col" rowspan="2"><p>玄汉</p><span>公元23-25年</span></th>
-          <th scope="col" rowspan="2"><p>东汉</p><span>公元25-220年</span></th>
-          <th scope="col" rowspan="2"><p>魏</p><span>公元220-265年</span></th>
-          <th scope="col" rowspan="2"><p>蜀</p><span>公元221-263年</span></th>
-          <th scope="col" rowspan="2"><p>吴</p><span>公元222-280年</span></th>
-          <th scope="col" rowspan="2"><p>西晋</p><span>公元265-316年</span></th>
-          <th scope="col" rowspan="2"><p>东晋</p><span>公元317-420年</span></th>
-          <th scope="col" rowspan="2"><p>前赵(汉赵)</p><span>公元304-329年</span></th>
-          <th scope="col" rowspan="2"><p>成汉</p><span>公元306-347年</span></th>
-          <th scope="col" rowspan="2"><p>前凉</p><span>公元314-363年</span></th>
-          <th scope="col" rowspan="2"><p>后赵</p><span>公元319-351年</span></th>
-          <th scope="col" rowspan="2"><p>前燕</p><span>公元337-370年</span></th>
-          <th scope="col" rowspan="2"><p>前秦</p><span>公元351-394年</span></th>
-          <th scope="col" rowspan="2"><p>后秦</p><span>公元384-417年</span></th>
-          <th scope="col" rowspan="2"><p>后燕</p><span>公元384-407年</span></th>
-          <th scope="col" rowspan="2"><p>西秦</p><span>公元385-431年</span></th>
-          <th scope="col" rowspan="2"><p>后凉</p><span>公元386-403年</span></th>
-          <th scope="col" rowspan="2"><p>南凉</p><span>公元397-414年</span></th>
-          <th scope="col" rowspan="2"><p>南燕</p><span>公元398-410年</span></th>
-          <th scope="col" rowspan="2"><p>西凉</p><span>公元407-421年</span></th>
-          <th scope="col" rowspan="2"><p>胡夏</p><span>公元407-431年</span></th>
-          <th scope="col" rowspan="2"><p>北燕</p><span>公元407-436年</span></th>
-          <th scope="col" rowspan="2"><p>北凉</p><span>公元397-439年</span></th>
-          <th scope="col" rowspan="2"><p>*冉魏</p><span>公元350-352年</span></th>
-          <th scope="col" rowspan="2"><p>*西燕</p><span>公元384-394年</span></th>
-          <th scope="col" rowspan="2"><p>西蜀(后蜀)</p><span>公元405-413年</span></th>
-          <th scope="col" colspan="4"><p>南朝</p></th>
-          <th scope="col" colspan="5"><p>北朝</p></th>
-          <th scope="col" rowspan="2"><p>后梁</p><span>公元907-923年</span></th>
-          <th scope="col" rowspan="2"><p>后唐</p><span>公元923-947年</span></th>
-          <th scope="col" rowspan="2"><p>后晋</p><span>公元936-947年</span></th>
-          <th scope="col" rowspan="2"><p>后汉</p><span>公元947-950年</span></th>
-          <th scope="col" rowspan="2"><p>后周</p><span>公元951-960年</span></th>
-          <th scope="col" rowspan="2"><p>前蜀</p><span>公元891-925年</span></th>
-          <th scope="col" rowspan="2"><p>后蜀</p><span>公元925-965年</span></th>
-          <th scope="col" rowspan="2"><p>杨吴</p><span>公元892-937年</span></th>
-          <th scope="col" rowspan="2"><p>南唐</p><span>公元937-975年</span></th>
-          <th scope="col" rowspan="2"><p>吴越</p><span>公元893-978年</span></th>
-          <th scope="col" rowspan="2"><p>闽国</p><span>公元893-945年</span></th>
-          <th scope="col" rowspan="2"><p>马楚</p><span>公元896-951年</span></th>
-          <th scope="col" rowspan="2"><p>南汉</p><span>公元905-971年</span></th>
-          <th scope="col" rowspan="2"><p>南平</p><span>公元907-963年</span></th>
-          <th scope="col" rowspan="2"><p>北汉</p><span>公元951-979年</span></th>
-          <th scope="col" rowspan="2"><p>北宋</p><span>公元960-1127年</span></th>
-          <th scope="col" rowspan="2"><p>南宋</p><span>公元1127-1279年</span></th>
+          <th scope="col" colspan="6">
+            <p>春秋</p><span>公元前770-476年</span>
+          </th>
+          <th scope="col" colspan="6">
+            <p>战国</p><span>公元前475-221年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>西汉</p><span>前206-公元8年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>新朝</p><span>公元9-23年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>玄汉</p><span>公元23-25年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>东汉</p><span>公元25-220年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>魏</p><span>公元220-265年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>蜀</p><span>公元221-263年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>吴</p><span>公元222-280年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>西晋</p><span>公元265-316年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>东晋</p><span>公元317-420年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>前赵(汉赵)</p><span>公元304-329年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>成汉</p><span>公元306-347年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>前凉</p><span>公元314-363年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后赵</p><span>公元319-351年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>前燕</p><span>公元337-370年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>前秦</p><span>公元351-394年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后秦</p><span>公元384-417年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后燕</p><span>公元384-407年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>西秦</p><span>公元385-431年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后凉</p><span>公元386-403年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南凉</p><span>公元397-414年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南燕</p><span>公元398-410年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>西凉</p><span>公元407-421年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>胡夏</p><span>公元407-431年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>北燕</p><span>公元407-436年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>北凉</p><span>公元397-439年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>*冉魏</p><span>公元350-352年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>*西燕</p><span>公元384-394年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>西蜀(后蜀)</p><span>公元405-413年</span>
+          </th>
+          <th scope="col" colspan="4">
+            <p>南朝</p>
+          </th>
+          <th scope="col" colspan="5">
+            <p>北朝</p>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后梁</p><span>公元907-923年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后唐</p><span>公元923-947年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后晋</p><span>公元936-947年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后汉</p><span>公元947-950年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后周</p><span>公元951-960年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>前蜀</p><span>公元891-925年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>后蜀</p><span>公元925-965年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>杨吴</p><span>公元892-937年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南唐</p><span>公元937-975年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>吴越</p><span>公元893-978年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>闽国</p><span>公元893-945年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>马楚</p><span>公元896-951年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南汉</p><span>公元905-971年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南平</p><span>公元907-963年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>北汉</p><span>公元951-979年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>北宋</p><span>公元960-1127年</span>
+          </th>
+          <th scope="col" rowspan="2">
+            <p>南宋</p><span>公元1127-1279年</span>
+          </th>
         </tr>
         <tr>
           <th class="th1 thFiexd"></th>
+          <th scope="col">东周</th>
           <th scope="col">齐</th>
           <th scope="col">晋</th>
           <th scope="col">鲁</th>
@@ -147,87 +268,38 @@
           <th scope="col">宋</th>
           <th scope="col">吴</th>
           <th scope="col">越</th>
-          <th scope="col"><p>刘宋</p><span>公元420-479年</span></th>
-          <th scope="col"><p>萧齐</p><span>公元479-502年</span></th>
-          <th scope="col"><p>梁梁</p><span>公元502-557年</span></th>
-          <th scope="col"><p>南陈</p><span>公元557-589年</span></th>
-          <th scope="col"><p>北魏</p><span>公元386-534年</span></th>
-          <th scope="col"><p>东魏</p><span>公元534-550年</span></th>
-          <th scope="col"><p>西魏</p><span>公元535-556年</span></th>
-          <th scope="col"><p>北齐</p><span>公元550-577年</span></th>
-          <th scope="col"><p>北周</p><span>公元559-581年</span></th>
+          <th scope="col">
+            <p>刘宋</p><span>公元420-479年</span>
+          </th>
+          <th scope="col">
+            <p>萧齐</p><span>公元479-502年</span>
+          </th>
+          <th scope="col">
+            <p>梁梁</p><span>公元502-557年</span>
+          </th>
+          <th scope="col">
+            <p>南陈</p><span>公元557-589年</span>
+          </th>
+          <th scope="col">
+            <p>北魏</p><span>公元386-534年</span>
+          </th>
+          <th scope="col">
+            <p>东魏</p><span>公元534-550年</span>
+          </th>
+          <th scope="col">
+            <p>西魏</p><span>公元535-556年</span>
+          </th>
+          <th scope="col">
+            <p>北齐</p><span>公元550-577年</span>
+          </th>
+          <th scope="col">
+            <p>北周</p><span>公元559-581年</span>
+          </th>
         </tr>
       </thead>
       <tbody>
       </tbody>
     </table>
   </div>
-  <script>
-    let arr = [
-      {
-        year: -888,
-        country:
-          [
-            { id: 5, incident: '啥都好说空间啊，是说空间啊，是电脑上看，啥都好说空间啊，是电脑上看' },
-            { id: 8, incident: '家科技山东快书' },
-            { id: 15, incident: '15151' },
-          ]
-      },
-      {
-        year: -88,
-        country:
-          [
-            { id: 6, incident: '手机号递减' },
-            { id: 10, incident: '崂山道士了，' }
-          ]
-      },
-      {
-        year: -8,
-        country:
-          [
-            { id: 6, incident: 'yige ' },
-          ]
-      },
-      {
-        year: 8,
-        country:
-          [
-            { id: 6, incident: '963 ' },
-          ]
-      },
-      {
-        year: 9,
-        country:
-          [
-            { id: 6, incident: '崂山道士了，崂山道士了，崂山道士了， ',info:'京东方肯定是奋斗司法鉴定，今飞凯达积分d.dfkdls发快递了。地方凯迪拉克发了多少的看法浪蝶狂蜂里看到，大富科技独守空房考虑到开始发的绝对是的' },
-          ]
-      },
-    ]
-  </script>
-  <script>
-    let wrap = document.querySelector('tbody');
-    let str = '';
-    for (let i = 0; i < arr.length; i++) {
-      str += `<tr><th class="thFiexd" scope="row">${arr[i].year<1?'前'+Math.abs(arr[i].year):arr[i].year}</th>`
-      for (let j = 0; j < arr[i].country.length; j++) {
-        if (j > 0) {
-          let num = arr[i].country[j].id - arr[i].country[j - 1].id;
-          for (let n = 1; n < num; n++) {
-            str += `<td></td>`
-          }
-        } else {
-          for (let n = 1; n < arr[i].country[j].id; n++) {
-            str += `<td></td>`
-          }
-        }
-        str += `<td>${arr[i].country[j].incident}`
-          if(arr[i].country[j].info){
-            str +=`<div><i>详情</i><div>${arr[i].country[j].info}<div></div>`
-          }
-        str +=`</td>`
-      }
-      str += `</tr>`
-    }
-    wrap.innerHTML = str
-  </script>
+  <script src="https://sl17.github.io/history/history.js"></script>
 </body>
