@@ -219,7 +219,6 @@ table.onmousedown = function (e) {
   idDown = true;
   Btop = document.getElementById("table-cont").scrollTop;
   Bleft = document.getElementById("table-cont").scrollLeft;
-  console.log(Btop,Bleft)
 }
 window.onmousemove = function (e) {
   if (!idDown) {
