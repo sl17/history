@@ -206,4 +206,30 @@ for (let i = 0; i < arr.length; i++) {
   }
   str += `</tr>`
 }
-wrap.innerHTML = str
+wrap.innerHTML = str;
+
+
+
+let table = document.getElementById("table-cont");
+let idDown = false;
+let [dx, dl, mx, ml, Btop, Bleft] = [0, 0, 0, 0, 0, 0]
+table.onmousedown = function (e) {
+  dx = e.clientX
+  dl = e.clientY
+  idDown = true;
+  Btop = document.documentElement.scrollTop;
+  Bleft = document.documentElement.scrollLeft;
+}
+window.onmousemove = function (e) {
+  if (!idDown) {
+    return;
+  }
+  mx = e.clientX - dx;
+  ml = e.clientY - dl;
+  document.documentElement.scrollLeft = (mx - Bleft) * -2
+  document.documentElement.scrollTop = (ml - Btop) * -5
+}
+table.onmouseup = function (e) {
+  idDown = false;
+}
+
