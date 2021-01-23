@@ -217,8 +217,9 @@ table.onmousedown = function (e) {
   dx = e.clientX
   dl = e.clientY
   idDown = true;
-  Btop = document.documentElement.scrollTop;
-  Bleft = document.documentElement.scrollLeft;
+  Btop = document.getElementById("table-cont").scrollTop;
+  Bleft = document.getElementById("table-cont").scrollLeft;
+  console.log(Btop,Bleft)
 }
 window.onmousemove = function (e) {
   if (!idDown) {
@@ -226,10 +227,9 @@ window.onmousemove = function (e) {
   }
   mx = e.clientX - dx;
   ml = e.clientY - dl;
-  document.documentElement.scrollLeft = (mx - Bleft) * -2
-  document.documentElement.scrollTop = (ml - Btop) * -5
+  document.getElementById("table-cont").scrollLeft = (mx - Bleft) * -1
+  document.getElementById("table-cont").scrollTop = (ml - Btop) * -1
 }
 table.onmouseup = function (e) {
   idDown = false;
 }
-
