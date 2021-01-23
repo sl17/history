@@ -25,6 +25,7 @@ th.thFiexd {
   left: 0;
   background: #ddd;
   white-space: nowrap;
+  z-index: 8;
 }
 
 thead tr {
