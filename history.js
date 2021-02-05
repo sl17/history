@@ -221,6 +221,9 @@ table.onmousedown = function (e) {
   Bleft = document.getElementById("table-cont").scrollLeft;
 }
 window.onmousemove = function (e) {
+  if(e.clientX<60||e.clientY<115||e.clientX>winW||e.clientY>winH){
+    idDown = false;
+  }
   if (!idDown) {
     return;
   }
