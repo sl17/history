@@ -181,6 +181,123 @@ let arr = [
       [
         { id: 15, incident: '姑苏城终于失守，越军进城 ,夫差自刎于姑苏山',info:'吴国都城经过越军长达三年的围攻封锁后，军民疲困，举国绝望，士卒离散，无力战斗。最后，坚固的姑苏城终于失守，越军进城。吴王夫差见大势已去，与王孙骆、伯嚭及卫队趁着夜色突围偷偷跑了。被重重围困在姑苏山上的夫差，眼见大势已去，只得派出王孙骆向越国求和，请求愿为附庸，世世代代事越。来使的言辞切切，让越王有些心动了。然而在面对这个重大问题决策的关键时刻，范蠡一扫往昔的柔弱卑下之风，以强硬的姿态予以了拒绝，并且警告勾践：“天与不取，反受其咎。范蠡与西施退政从商，成为商道始祖”' },
       ]
+  },
+  {
+    year:-221,
+    country:
+      [
+        { id: 20, incident: '秦统一，秦始皇确立郡县制，统一货币、度量衡和文字' },
+      ]
+  },
+  {
+    year:-209,
+    country:
+      [
+        { id: 20, incident: '陈胜、吴广起义爆发' },
+      ]
+  },
+  {
+    year:-207,
+    country:
+      [
+        { id: 20, incident: '巨鹿之战' },
+      ]
+  },
+  {
+    year:-206,
+    country:
+      [
+        { id: 20, incident: '刘邦攻入咸阳，秦亡' },
+      ]
+  },
+  {
+    year:-202,
+    country:
+      [
+        { id: 21, incident: '西汉建立' },
+      ]
+  },
+  {
+    year:-138,
+    country:
+      [
+        { id: 21, incident: '张骞第一次出使西域' },
+      ]
+  },
+  {
+    year:8,
+    country:
+      [
+        { id: 21, incident: '王莽夺取西汉政权，改国号新' },
+      ]
+  },
+  {
+    year:25,
+    country:
+      [
+        { id: 24, incident: '东汉建立' },
+      ]
+  },
+  {
+    year:73,
+    country:
+      [
+        { id: 24, incident: '班超出使西域' },
+      ]
+  },
+  {
+    year:105,
+    country:
+      [
+        { id: 24, incident: '蔡伦改进造纸术' },
+      ]
+  },
+  {
+    year:132,
+    country:
+      [
+        { id: 24, incident: '张衡发明地动仪' },
+      ]
+  },
+  {
+    year:166,
+    country:
+      [
+        { id: 24, incident: '大秦王安敦派使臣到中国' },
+      ]
+  },
+  {
+    year:184,
+    country:
+      [
+        { id: 24, incident: '张角领导黄巾起义' },
+      ]
+  },
+  {
+    year:200,
+    country:
+      [
+        { id: 24, incident: '官渡之战' },
+      ]
+  },
+  {
+    year:208,
+    country:
+      [
+        { id: 24, incident: '赤壁之战' },
+      ]
+  },
+  {
+    year:927,
+    country:[
+      {id: 60,incident: '三月二十一日，宋太祖赵匡胤出生于洛阳夹马营的应天禅院'}
+    ]
+  },
+  {
+    year:939,
+    country:[
+      {id: 60,incident: '赵匡义出生'}
+    ]
   }
 ]
 let wrap = document.querySelector('tbody');
@@ -206,10 +323,15 @@ for (let i = 0; i < arr.length; i++) {
   }
   str += `</tr>`
 }
+window.addEventListener("resize", displayWindowSize);
+let winW = document.body.clientWidth-50;
+let winH = document.body.clientHeight-50; 
+function displayWindowSize(){
+  winW = document.body.clientWidth-50;
+  winH = document.body.clientHeight-50; 
+}
+
 wrap.innerHTML = str;
-
-
-
 let table = document.getElementById("table-cont");
 let idDown = false;
 let [dx, dl, mx, ml, Btop, Bleft] = [0, 0, 0, 0, 0, 0]
